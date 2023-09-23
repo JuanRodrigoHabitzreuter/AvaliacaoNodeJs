@@ -1,156 +1,53 @@
 class ServicoExercicio {
-    Somar(num1, num2) {
-        console.log('Iniciando')
-        if(isNaN(num1) || isNaN(num2)){
-            throw new Error("Favor informar números")
-        }
-        const resultado = num1 + num2
-    
-        return resultado;
+  Somar(num1, num2) {
+    console.log("Iniciando");
+    if (isNaN(num1) || isNaN(num2)) {
+      throw new Error("Favor informar números");
     }
-} 
-module.exports = ServicoSomar
+    const resultado = num1 + num2;
 
-class ServicoDiminuir {
-    Diminuir(num1, num2) {
-        console.log('Iniciando')
-        if(isNaN(num1) || isNaN(num2)){
-            throw new Error("Favor informar números")
-        }
-        const resultado = num1 - num2
-    
-        return resultado;
+    return resultado;
+  }
+
+  Diminuir(num1, num2) {
+    console.log("Iniciando");
+    if (isNaN(num1) || isNaN(num2)) {
+      throw new Error("Favor informar números");
     }
-} 
-module.exports = ServicoExercicio
+    const resultado = num1 - num2;
 
-class ServicoMultiplicar {
-    Multiplicar(num1, num2) {
-        console.log('Iniciando')
-        if(isNaN(num1) || isNaN(num2)){
-            throw new Error("Favor informar números")
-        }
-        const resultado = num1 * num2
-    
-        return resultado;
+    return resultado;
+  }
+
+  Multiplicar(num1, num2) {
+    console.log("Iniciando");
+    if (isNaN(num1) || isNaN(num2)) {
+      throw new Error("Favor informar números");
     }
-} 
-module.exports = ServicoMultiplicar
+    const resultado = num1 * num2;
 
-class ServicoMultiplicar {
-    Multiplicar(num1, num2) {
-        console.log('Iniciando')
-        if(isNaN(num1) || isNaN(num2)){
-            throw new Error("Resultado é zero")
-        }
-        const resultado = num1 * 0
-    
-        return resultado;
+    return resultado;
+  }
+
+  Dividir(num1, num2) {
+    console.log("Iniciando");
+    if (isNaN(num1) || isNaN(num2)) {
+      throw new Error("Favor informar números");
     }
-} 
-module.exports = ServicoMultiplicar
+    const resultado = num1 / num2;
 
-class ServicoMultiplicar {
-    Multiplicar(num1, num2) {
-        console.log('Iniciando')
-        if(isNaN(num1) || isNaN(num2)){
-            throw new Error("Resultado é zero")
-        }
-        const resultado = 0 * num2
-    
-        return resultado;
+    return resultado;
+  }
+
+  Potenciacao(base, expoente) {
+    console.log("Iniciando");
+    if (isNaN(base) || isNaN(expoente)) {
+      throw new Error("Favor informar números");
     }
-} 
-module.exports = ServicoMultiplicar
+    const resultado = Math.pow(base, expoente);
 
+    return resultado;
+  }
+}
 
-class ServicoMultiplicar {
-    Multiplicar(num1, num2) {
-        console.log('Iniciando')
-        if(isNaN(num1) || isNaN(num2)){
-            throw new Error("Não vai rodar")
-        }
-        const resultado = null * num2
-    
-        return resultado;
-    }
-} 
-module.exports = ServicoMultiplicar
-
-class ServicoMultiplicar {
-    Multiplicar(num1, num2) {
-        console.log('Iniciando')
-        if(isNaN(num1) || isNaN(num2)){
-            throw new Error("Não vai rodar")
-        }
-        const resultado = num1 * null
-    
-        return resultado;
-    }
-} 
-module.exports = ServicoMultiplicar
-
-class ServicoDividir {
-    Dividir(num1, num2) {
-        console.log('Iniciando')
-        if(isNaN(num1) || isNaN(num2)){
-            throw new Error("Favor informar números")
-        }
-        const resultado = num1 / num2
-    
-        return resultado;
-    }
-} 
-module.exports = ServicoDividir
-
-class ServicoDividir {
-    Dividir(num1, num2) {
-        console.log('Iniciando')
-        if(isNaN(num1) || isNaN(num2)){
-            throw new Error("Resultado é zero")
-        }
-        const resultado = num1 / 0
-    
-        return resultado;
-    }
-} 
-module.exports = ServicoDividir
-
-class ServicoDividir {
-    Dividir(num1, num2) {
-        console.log('Iniciando')
-        if(isNaN(num1) || isNaN(num2)){
-            throw new Error("Resultado é zero")
-        }
-        const resultado = 0 / num2
-    
-        return resultado;
-    }
-} 
-module.exports = ServicoDividir
-
-class ServicoDividir {
-    Dividir(num1, num2) {
-        console.log('Iniciando')
-        if(isNaN(num1) || isNaN(num2)){
-            throw new Error("Não funciona")
-        }
-        const resultado = num1 / null
-    
-        return resultado;
-    }
-} 
-module.exports = ServicoDividir
-
-class ServicoDividir {
-    Dividir(num1, num2) {
-        console.log('Iniciando')
-        if(isNaN(num1) || isNaN(num2)){
-            throw new Error("Não funciona")
-        }
-        const resultado = null / num2
-    
-        return resultado;
-    }
-} 
-module.exports = ServicoDividir
+module.exports = ServicoExercicio;

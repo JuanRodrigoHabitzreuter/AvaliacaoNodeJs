@@ -1,23 +1,16 @@
-const express = require('express')
-const ControllerExercicio = require('../controllers/exercicio.js')
-const ControllerDiminuir = require('../controllers/exercicio.js')
-const ControllerDividir = require('../controllers/exercicio.js')
-const ControllerMultiplicar = require('../controllers/exercicio.js')
+const express = require("express");
+const ControllerExercicio = require("../controllers/exercicio.js");
 
-const controller = new ControllerExercicio()
-const router = express.Router()
-router.post('/api/exercicio', controller.Somar)
+const controller = new ControllerExercicio();
+const router = express.Router();
 
-// const controller = new ControllerDiminuir()
-// const router = express.Router()
-router.post('/api/exercicio', controller.Diminuir)
+router.post("/api/somar", controller.Somar);
+router.post("/api/diminiur", controller.Diminuir);
+router.post("/api/multiplicar", controller.Multiplicar);
+router.post("/api/subtrair", controller.Dividir);
+router.post("/api/potenciacao", controller.Potenciacao);
+router.get("/api/exercicio", (_, res) => {
+  res.send("Soma, Diminuir, Multiplicar, Dividir, Potenciacao");
+});
 
-// const controller = new ControllerMultiplicar()
-// const router = express.Router()
-router.post('/api/exercicio', controller.Multiplicar)
-
-// const controller = new ControllerDividir()
-// const router = express.Router()
-router.post('/api/exercicio', controller.Dividir)
-
-module.exports = router
+module.exports = router;
